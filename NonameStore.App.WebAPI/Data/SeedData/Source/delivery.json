@@ -1,0 +1,27 @@
+[
+  {
+    "ShortName": "MAG",
+    "DeliveryTime": "В любой рабочий день",
+    "Description": "Забрать в нашем магазине",
+    "Price": 0
+  },
+  {
+    "ShortName": "CUR",
+    "DeliveryTime": "Около 2 дней",
+    "Description": "Доставка курьером",
+    "Price": 550
+  },
+  {
+    "ShortName": "POST",
+    "DeliveryTime": "Не больше 2 недель",
+    "Description": "Забрать из пункта доставки",
+    "Price": 200
+  },
+  {
+    "ShortName": "RPOST",
+    "DeliveryTime": "Примерно 30 дней",
+    "Description": "Почтой России",
+    "Price": 300
+  }
+]
+

@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "Продукт первый",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 1200,
+    "PictureUrl": "product_1.png",
+    "ProductTypeId": 1,
+    "ProductRegionId": 1,
+    "Quantity": 2
+  },
+  {
+    "Name": "Товар обычный",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 3150,
+    "PictureUrl": "product_2.png",
+    "ProductTypeId": 2,
+    "ProductRegionId": 5,
+    "Quantity": 27
+  },
+  {
+    "Name": "Товар в коробке",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 2180,
+    "PictureUrl": "product_3.png",
+    "ProductTypeId": 3,
+    "ProductRegionId": 4,
+    "Quantity": 31
+  },
+  {
+    "Name": "Новый продукт",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 4300,
+    "PictureUrl": "product_4.png",
+    "ProductTypeId": 2,
+    "ProductRegionId": 3,
+    "Quantity": 9
+  },
+  {
+    "Name": "Товар стандартный",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 2250,
+    "PictureUrl": "product_5.png",
+    "ProductTypeId": 1,
+    "ProductRegionId": 2,
+    "Quantity": 7
+  },
+  {
+    "Name": "Продукт",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 2120,
+    "PictureUrl": "product_6.png",
+    "ProductTypeId": 3,
+    "ProductRegionId": 1,
+    "Quantity": 14
+  },
+    {
+    "Name": "Стандартный продукт",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 1210,
+    "PictureUrl": "product_7.png",
+    "ProductTypeId": 3,
+    "ProductRegionId": 1,
+    "Quantity": 16
+  },
+    {
+    "Name": "Товар новый",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 1220,
+    "PictureUrl": "product_8.png",
+    "ProductTypeId": 1,
+    "ProductRegionId": 2,
+    "Quantity": 24
+  }
+]
