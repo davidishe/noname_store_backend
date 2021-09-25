@@ -1,10 +1,10 @@
 using System;
 using System.Text.Json;
 using System.Threading.Tasks;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Models;
 using StackExchange.Redis;
 
-namespace MyAppBack.Data.Repos.BasketRepository
+namespace NonameStore.App.WebAPI.Data.Repos.BasketRepository
 {
   public class BasketRepository : IBasketRepository
   {

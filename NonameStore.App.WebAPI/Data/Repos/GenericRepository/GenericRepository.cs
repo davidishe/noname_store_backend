@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Data.Config;
-using MyAppBack.Data.Spec;
-using MyAppBack.Infrastructure.Database;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Data.Config;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Infrastructure.Database;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Data.Repos.GenericRepository
+namespace NonameStore.App.WebAPI.Data.Repos.GenericRepository
 {
   public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
   {

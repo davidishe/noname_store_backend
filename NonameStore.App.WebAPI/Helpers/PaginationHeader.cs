@@ -1,4 +1,4 @@
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public class PaginationHeader
   {

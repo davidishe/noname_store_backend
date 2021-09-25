@@ -2,13 +2,13 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MyAppBack.Data.Repos.BasketRepository;
-using MyAppBack.Dtos;
-using MyAppBack.Errors;
-using MyAppBack.Extensions;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
+using NonameStore.App.WebAPI.Dtos;
+using NonameStore.App.WebAPI.Errors;
+using NonameStore.App.WebAPI.Extensions;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
 
   [AllowAnonymous]

@@ -1,9 +1,9 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Data.Spec;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Config
+namespace NonameStore.App.WebAPI.Data.Config
 {
   public class SpecificationEvaluator<TEntity> where TEntity : BaseEntity
   {

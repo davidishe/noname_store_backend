@@ -2,16 +2,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using MyAppBack.Data.Repos.BasketRepository;
-using MyAppBack.Data.Spec;
-using MyAppBack.Data.UnitOfWork;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
-using MyAppBack.Models.Payment;
-using Order = MyAppBack.Models.OrderAggregate.Order;
-using Product = MyAppBack.Models.Product;
+using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Data.UnitOfWork;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models.Payment;
+using Order = NonameStore.App.WebAPI.Models.OrderAggregate.Order;
+using Product = NonameStore.App.WebAPI.Models.Product;
 
-namespace MyAppBack.Services.PaymentService
+namespace NonameStore.App.WebAPI.Services.PaymentService
 {
   public class PaymentService : IPaymentService
   {

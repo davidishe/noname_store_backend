@@ -1,4 +1,4 @@
-namespace MyAppBack.Errors
+namespace NonameStore.App.WebAPI.Errors
 {
   public class ApiException : ApiResponse
   {

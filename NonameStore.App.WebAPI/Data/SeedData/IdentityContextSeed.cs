@@ -7,9 +7,9 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using MyAppBack.Identity;
-using MyAppBack.Models.Identity;
-using MyAppBack.Identity.Database;
+using NonameStore.App.WebAPI.Identity;
+using NonameStore.App.WebAPI.Models.Identity;
+using NonameStore.App.WebAPI.Identity.Database;
 
 namespace Identity.Database.SeedData
 {

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using MyAppBack.Identity;
+using NonameStore.App.WebAPI.Models.Identity;
 
-namespace MyAppBack.Services.TokenService
+namespace NonameStore.App.WebAPI.Services.TokenService
 {
   public class TokenService : ITokenService
   {

@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MyAppBack.Data.Repos.BasketRepository;
-using MyAppBack.Data.Spec;
-using MyAppBack.Data.UnitOfWork;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
-using MyAppBack.Services.PaymentService;
+using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Data.UnitOfWork;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Services.PaymentService;
 
-namespace MyAppBack.Services.OrderService
+namespace NonameStore.App.WebAPI.Services.OrderService
 {
   public class OrderService : IOrderService
   {

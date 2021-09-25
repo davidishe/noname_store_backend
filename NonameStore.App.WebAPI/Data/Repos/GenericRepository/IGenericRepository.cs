@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MyAppBack.Data.Spec;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Data.Repos.GenericRepository
+namespace NonameStore.App.WebAPI.Data.Repos.GenericRepository
 {
   public interface IGenericRepository<T> where T : BaseEntity
   {

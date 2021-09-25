@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MyAppBack.Helpers;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Helpers;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Repos
+namespace NonameStore.App.WebAPI.Data.Repos
 {
   public interface IProductRepository
   {

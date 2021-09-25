@@ -1,13 +1,13 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using MyAppBack.External.Contracts;
-using MyAppBack.Models.Contracts;
 using Microsoft.Extensions.Configuration;
-using MyAppBack.Models.Contracts.Google;
 using System;
+using NonameStore.App.WebAPI.Models.External.Contracts;
+using NonameStore.App.WebAPI.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Contracts.Google;
 
-namespace MyAppBack.Services
+namespace NonameStore.App.WebAPI.Services
 {
   public class GoogleAuthService : IGoogleAuthService
   {
@@ -59,7 +59,7 @@ namespace MyAppBack.Services
       // return JsonConvert.DeserializeObject<AccesssTokenResponse>(responseAsString);
 
       // TODO: refactor AccesssTokenResponse object for google fields
-      var formattedUrl = string.Format(getAccessTokenUrl, code, _appId, _appSecret, _redirectUri );
+      var formattedUrl = string.Format(getAccessTokenUrl, code, _appId, _appSecret, _redirectUri);
       var client = new HttpClient();
       var response = await client.PostAsync(formattedUrl, null);
 

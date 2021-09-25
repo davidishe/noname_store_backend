@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
-using MyAppBack.Extensions;
-using MyAppBack.Identity.Database;
-using MyAppBack.Infrastructure.Database;
-using MyAppBack.Middleware;
+using NonameStore.App.WebAPI.Extensions;
+using NonameStore.App.WebAPI.Identity.Database;
+using NonameStore.App.WebAPI.Infrastructure.Database;
+using NonameStore.App.WebAPI.Middleware;
 using StackExchange.Redis;
 
-namespace MyAppBack
+namespace NonameStore.App.WebAPI
 {
   public class Startup
   {

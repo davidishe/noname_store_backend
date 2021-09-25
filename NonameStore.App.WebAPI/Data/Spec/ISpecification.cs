@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace MyAppBack.Data.Spec
+namespace NonameStore.App.WebAPI.Data.Spec
 {
   public interface ISpecification<T>
   {

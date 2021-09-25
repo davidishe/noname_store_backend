@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace MyAppBack.Services.ResponseCacheService
+namespace NonameStore.App.WebAPI.Services.ResponseCacheService
 {
   public interface IResponseCacheService
   {

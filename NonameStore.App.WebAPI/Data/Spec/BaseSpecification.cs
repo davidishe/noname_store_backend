@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using MyAppBack.Data.Config;
+using NonameStore.App.WebAPI.Data.Config;
 
-namespace MyAppBack.Data.Spec
+namespace NonameStore.App.WebAPI.Data.Spec
 {
   public class BaseSpecification<T> : ISpecification<T>
   {

@@ -3,9 +3,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Identity;
+using NonameStore.App.WebAPI.Models.Identity;
 
-namespace MyAppBack.Extensionss
+namespace NonameStore.App.WebAPI.Extensionss
 {
   public static class UserManagerExtensions
   {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public class Pagination<T> where T : class
   {

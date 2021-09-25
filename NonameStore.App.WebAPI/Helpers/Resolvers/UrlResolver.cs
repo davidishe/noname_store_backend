@@ -1,9 +1,9 @@
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using MyAppBack.Dtos;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Dtos;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public class UrlResolver : IValueResolver<Product, ProductToReturnDto, string>
   {
@@ -24,7 +24,7 @@ namespace MyAppBack.Helpers
       // TODO: сделать чтобы возвращалась ссылка на домен
       if (!string.IsNullOrEmpty(source.PictureUrl))
       {
-        return  _config.GetSection("ApiUrl").Value + "Assets/Images/Products/" + source.PictureUrl;
+        return _config.GetSection("ApiUrl").Value + "Assets/Images/Products/" + source.PictureUrl;
       }
       return null;
     }

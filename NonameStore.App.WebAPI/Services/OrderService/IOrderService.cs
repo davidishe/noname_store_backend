@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Services.OrderService
+namespace NonameStore.App.WebAPI.Services.OrderService
 {
   public interface IOrderService
   {

@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
-using MyAppBack.Services.ResponseCacheService;
+using NonameStore.App.WebAPI.Services.ResponseCacheService;
 
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public class CachedAttribute : Attribute, IAsyncActionFilter
   {

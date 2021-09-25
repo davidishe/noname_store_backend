@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 using System.Reflection;
 
-namespace MyAppBack.Infrastructure.Database
+namespace NonameStore.App.WebAPI.Infrastructure.Database
 {
   public class AppDbContext : DbContext
   {

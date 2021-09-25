@@ -1,22 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Data;
-using MyAppBack.Dtos;
-using MyAppBack.Errors;
-using MyAppBack.Extensionss;
-using MyAppBack.Identity;
-using MyAppBack.Models.Contracts;
-using MyAppBack.Services;
-using MyAppBack.Services.TokenService;
+using NonameStore.App.WebAPI.Dtos;
+using NonameStore.App.WebAPI.Errors;
+using NonameStore.App.WebAPI.Extensionss;
+using NonameStore.App.WebAPI.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Identity;
+using NonameStore.App.WebAPI.Services;
+using NonameStore.App.WebAPI.Services.TokenService;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
 
   [Authorize]

@@ -1,8 +1,8 @@
 using System;
-using MyAppBack.Helpers;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Helpers;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Spec
+namespace NonameStore.App.WebAPI.Data.Spec
 {
   public class ProductsWithTypesAndRegionsSpecification : BaseSpecification<Product>
   {

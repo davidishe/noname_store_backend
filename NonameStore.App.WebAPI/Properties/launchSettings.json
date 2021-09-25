@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
-    "MyAppBack": {
+    "NonameStore.App.WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5101",

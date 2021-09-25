@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using MyAppBack.External.Contracts;
-using MyAppBack.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Contracts;
+using NonameStore.App.WebAPI.Models.External.Contracts;
 
-namespace MyAppBack.Services
+namespace NonameStore.App.WebAPI.Services
 {
   public interface IFacebookAuthService
   {

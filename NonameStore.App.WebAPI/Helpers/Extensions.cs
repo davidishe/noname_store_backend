@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public static class Extensions
   {

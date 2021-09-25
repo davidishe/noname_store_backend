@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Config
+namespace NonameStore.App.WebAPI.Data.Config
 {
   public class ProductConfiguration : IEntityTypeConfiguration<Product>
   {

@@ -6,7 +6,7 @@ using Dadata.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
 
   [AllowAnonymous]

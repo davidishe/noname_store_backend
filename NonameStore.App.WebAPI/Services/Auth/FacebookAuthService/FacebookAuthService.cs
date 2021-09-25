@@ -1,12 +1,12 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using MyAppBack.External.Contracts;
-using MyAppBack.Options;
-using MyAppBack.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Contracts;
 using Microsoft.Extensions.Configuration;
+using NonameStore.App.WebAPI.Models.Options;
+using NonameStore.App.WebAPI.Models.External.Contracts;
 
-namespace MyAppBack.Services
+namespace NonameStore.App.WebAPI.Services
 {
   public class FacebookAuthService : IFacebookAuthService
   {

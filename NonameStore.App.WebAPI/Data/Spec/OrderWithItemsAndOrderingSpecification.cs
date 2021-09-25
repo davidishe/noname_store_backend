@@ -1,8 +1,8 @@
 using System;
 using System.Linq.Expressions;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Data.Spec
+namespace NonameStore.App.WebAPI.Data.Spec
 {
   public class OrderWithItemsAndOrderingSpecification : BaseSpecification<Order>
   {

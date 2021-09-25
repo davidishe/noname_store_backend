@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Helpers;
-using MyAppBack.Infrastructure.Database;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Helpers;
+using NonameStore.App.WebAPI.Infrastructure.Database;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Repos
+namespace NonameStore.App.WebAPI.Data.Repos
 {
   public class ProductRepository : IProductRepository
   {

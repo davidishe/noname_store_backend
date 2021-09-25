@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MyAppBack.Data;
-using MyAppBack.Errors;
-using MyAppBack.Infrastructure.Database;
+using NonameStore.App.WebAPI.Data;
+using NonameStore.App.WebAPI.Errors;
+using NonameStore.App.WebAPI.Infrastructure.Database;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
   public class BuggsController : BaseApiController
   {

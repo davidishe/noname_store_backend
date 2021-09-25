@@ -1,10 +1,11 @@
 using AutoMapper;
-using MyAppBack.Dtos;
-using MyAppBack.Identity;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Dtos;
+using NonameStore.App.WebAPI.Identity;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.Identity;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Helpers
+namespace NonameStore.App.WebAPI.Helpers
 {
   public class AutoMapperProfiles : Profile
   {
@@ -18,11 +19,11 @@ namespace MyAppBack.Helpers
         .ForMember(d => d.Region, m => m.MapFrom(s => s.Region.Name))
         .ForMember(d => d.PictureUrl, m => m.MapFrom<UrlResolver>());
 
-      CreateMap<MyAppBack.Identity.Address, AddressDto>().ReverseMap();
+      CreateMap<NonameStore.App.WebAPI.Models.Identity.Address, AddressDto>().ReverseMap();
       CreateMap<BasketDto, Basket>();
 
       CreateMap<BasketItemDto, BasketItem>();
-      CreateMap<AddressDto, MyAppBack.Models.OrderAggregate.Address>();
+      CreateMap<AddressDto, NonameStore.App.WebAPI.Models.OrderAggregate.Address>();
       CreateMap<Order, OrderToReturnDto>()
         .ForMember(d => d.DeliveryMethod, m => m.MapFrom(s => s.DeliveryMethod.ShortName))
         .ForMember(d => d.DeliveryPrice, m => m.MapFrom(s => s.DeliveryMethod.Price));

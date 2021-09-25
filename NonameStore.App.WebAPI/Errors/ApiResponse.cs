@@ -1,6 +1,6 @@
 using System;
 
-namespace MyAppBack.Errors
+namespace NonameStore.App.WebAPI.Errors
 {
   public class ApiResponse
   {

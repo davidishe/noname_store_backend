@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
-using MyAppBack.Data.Repos.GenericRepository;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Data.Repos.GenericRepository;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.UnitOfWork
+namespace NonameStore.App.WebAPI.Data.UnitOfWork
 {
   public interface IUnitOfWork : IDisposable
   {

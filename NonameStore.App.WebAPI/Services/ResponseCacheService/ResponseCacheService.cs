@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using StackExchange.Redis;
 
-namespace MyAppBack.Services.ResponseCacheService
+namespace NonameStore.App.WebAPI.Services.ResponseCacheService
 {
   public class ResponseCacheService : IResponseCacheService
   {

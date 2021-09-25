@@ -8,12 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MyAppBack.Identity;
-using MyAppBack.Identity.Database;
-using MyAppBack.Infrastructure.Database;
-using MyAppBack.Models.Identity;
+using NonameStore.App.WebAPI.Identity.Database;
+using NonameStore.App.WebAPI.Infrastructure.Database;
+using NonameStore.App.WebAPI.Models.Identity;
 
-namespace MyAppBack
+namespace NonameStore.App.WebAPI
 {
   public class Program
   {

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Data.Repos.BasketRepository
+namespace NonameStore.App.WebAPI.Data.Repos.BasketRepository
 {
   public interface IBasketRepository
   {

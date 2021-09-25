@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MyAppBack.Errors;
+using NonameStore.App.WebAPI.Errors;
 
-namespace MyAppBack.Middleware
+namespace NonameStore.App.WebAPI.Middleware
 {
   public class ExceptionMiddleware
   {

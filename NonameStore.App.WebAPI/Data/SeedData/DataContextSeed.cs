@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using MyAppBack.Infrastructure.Database;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Infrastructure.Database;
+using NonameStore.App.WebAPI.Models;
 
 namespace Infrastructure.Database.SeedData
 {

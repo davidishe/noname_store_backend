@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Data.Config
+namespace NonameStore.App.WebAPI.Data.Config
 {
   public class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
   {

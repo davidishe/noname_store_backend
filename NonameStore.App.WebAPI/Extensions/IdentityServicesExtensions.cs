@@ -4,13 +4,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using MyAppBack.Identity;
-using MyAppBack.Identity.Database;
-using MyAppBack.Models.Identity;
-using MyAppBack.Options;
-using MyAppBack.Services;
+using NonameStore.App.WebAPI.Identity.Database;
+using NonameStore.App.WebAPI.Models.Identity;
+using NonameStore.App.WebAPI.Models.Options;
+using NonameStore.App.WebAPI.Services;
 
-namespace MyAppBack.Extensions
+namespace NonameStore.App.WebAPI.Extensions
 {
   public static class IdentityServicesExtensions
 

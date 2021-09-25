@@ -6,14 +6,14 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyAppBack.Data.Repos.GenericRepository;
-using MyAppBack.Data.Spec;
-using MyAppBack.Dtos;
-using MyAppBack.Dtos.Product;
-using MyAppBack.Helpers;
-using MyAppBack.Models;
+using NonameStore.App.WebAPI.Data.Repos.GenericRepository;
+using NonameStore.App.WebAPI.Data.Spec;
+using NonameStore.App.WebAPI.Dtos;
+using NonameStore.App.WebAPI.Dtos.Product;
+using NonameStore.App.WebAPI.Helpers;
+using NonameStore.App.WebAPI.Models;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
 
 

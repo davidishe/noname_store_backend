@@ -1,18 +1,18 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using MyAppBack.Data.Repos;
-using MyAppBack.Data.Repos.BasketRepository;
-using MyAppBack.Data.Repos.GenericRepository;
-using MyAppBack.Data.UnitOfWork;
-using MyAppBack.Errors;
-using MyAppBack.Services;
-using MyAppBack.Services.OrderService;
-using MyAppBack.Services.PaymentService;
-using MyAppBack.Services.ResponseCacheService;
-using MyAppBack.Services.TokenService;
+using NonameStore.App.WebAPI.Data.Repos;
+using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
+using NonameStore.App.WebAPI.Data.Repos.GenericRepository;
+using NonameStore.App.WebAPI.Data.UnitOfWork;
+using NonameStore.App.WebAPI.Errors;
+using NonameStore.App.WebAPI.Services;
+using NonameStore.App.WebAPI.Services.OrderService;
+using NonameStore.App.WebAPI.Services.PaymentService;
+using NonameStore.App.WebAPI.Services.ResponseCacheService;
+using NonameStore.App.WebAPI.Services.TokenService;
 
-namespace MyAppBack.Extensions
+namespace NonameStore.App.WebAPI.Extensions
 {
   public static class ApplicationServicesExtensions
   {

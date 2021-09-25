@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MyAppBack.Domain;
-using MyAppBack.Models.Identity;
+using NonameStore.App.WebAPI.Models.Domain;
+using NonameStore.App.WebAPI.Models.Identity;
 
-namespace MyAppBack.Identity.Database
+namespace NonameStore.App.WebAPI.Identity.Database
 {
   public class IdentityContext : IdentityDbContext<AppUser, Role, int, IdentityUserClaim<int>, UserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
   {

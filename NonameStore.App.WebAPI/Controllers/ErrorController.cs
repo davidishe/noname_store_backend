@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using MyAppBack.Errors;
+using NonameStore.App.WebAPI.Errors;
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
   [Route("errors/{code}")]
   public class ErrorController : BaseApiController

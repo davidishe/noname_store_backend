@@ -1,21 +1,17 @@
-using System;
 using System.IO;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using MyAppBack.Models;
-using MyAppBack.Models.Payment;
-using MyAppBack.Services.PaymentService;
-using Order = MyAppBack.Models.OrderAggregate.Order;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.Payment;
+using NonameStore.App.WebAPI.Services.PaymentService;
+using Order = NonameStore.App.WebAPI.Models.OrderAggregate.Order;
 
 
-namespace MyAppBack.Controllers
+namespace NonameStore.App.WebAPI.Controllers
 {
   [AllowAnonymous]
   public class PaymentsController : BaseApiController

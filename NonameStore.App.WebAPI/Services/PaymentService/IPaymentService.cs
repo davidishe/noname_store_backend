@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Services.PaymentService
+namespace NonameStore.App.WebAPI.Services.PaymentService
 {
   public interface IPaymentService
   {

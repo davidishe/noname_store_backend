@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Security.Claims;
 
-namespace MyAppBack.Extensions
+namespace NonameStore.App.WebAPI.Extensions
 {
   public static class ClaimsPrincipalExtension
   {

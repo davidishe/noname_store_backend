@@ -1,9 +1,9 @@
 using System;
-using MyAppBack.Helpers;
-using MyAppBack.Models;
-using MyAppBack.Models.OrderAggregate;
+using NonameStore.App.WebAPI.Helpers;
+using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace MyAppBack.Data.Spec
+namespace NonameStore.App.WebAPI.Data.Spec
 {
   public class OrderByPaymentIntentIdSpecification : BaseSpecification<Order>
   {

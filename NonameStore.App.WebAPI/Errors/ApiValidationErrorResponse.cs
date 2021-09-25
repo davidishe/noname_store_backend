@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MyAppBack.Errors
+namespace NonameStore.App.WebAPI.Errors
 {
   public class ApiValidationErrorResponse : ApiResponse
   {

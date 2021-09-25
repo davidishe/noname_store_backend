@@ -2,16 +2,13 @@ using System;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
-using MyAppBack.Domain;
-using MyAppBack.Dtos;
-using MyAppBack.Identity;
-using MyAppBack.Models.Contracts;
-using MyAppBack.Models.Identity;
-using MyAppBack.Options;
-using MyAppBack.Services.TokenService;
+using NonameStore.App.WebAPI.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Domain;
+using NonameStore.App.WebAPI.Models.Dtos;
+using NonameStore.App.WebAPI.Models.Identity;
+using NonameStore.App.WebAPI.Services.TokenService;
 
-namespace MyAppBack.Services
+namespace NonameStore.App.WebAPI.Services
 {
   public class IdentityService : IIdentityService
   {
