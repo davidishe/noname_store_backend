@@ -292,7 +292,7 @@ namespace NonameStore.App.WebAPI.Controllers
 
     private async Task<bool> SetTimeOut()
     {
-      await Task.Delay(2000);
+      await Task.Delay(300);
       return true;
     }
 

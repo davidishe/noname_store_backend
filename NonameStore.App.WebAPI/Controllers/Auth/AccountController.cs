@@ -9,6 +9,7 @@ using NonameStore.App.WebAPI.Dtos;
 using NonameStore.App.WebAPI.Errors;
 using NonameStore.App.WebAPI.Extensionss;
 using NonameStore.App.WebAPI.Models.Contracts;
+using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.Identity;
 using NonameStore.App.WebAPI.Services;
 using NonameStore.App.WebAPI.Services.TokenService;

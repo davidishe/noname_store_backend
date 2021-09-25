@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using NonameStore.App.WebAPI.Dtos;
 using NonameStore.App.WebAPI.Errors;
 using NonameStore.App.WebAPI.Extensions;
+using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.OrderAggregate;
 using NonameStore.App.WebAPI.Services.OrderService;
 

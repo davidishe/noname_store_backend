@@ -5,8 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NonameStore.App.WebAPI.Dtos;
-using NonameStore.App.WebAPI.Identity;
+using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.Identity;
 
 namespace NonameStore.App.WebAPI.Controllers

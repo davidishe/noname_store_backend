@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using NonameStore.App.WebAPI.Infrastructure.Database;
 using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
 namespace Infrastructure.Database.SeedData
 {
@@ -39,6 +40,17 @@ namespace Infrastructure.Database.SeedData
           foreach (var item in items)
           {
             context.ProductTypes.Add(item);
+          }
+          await context.SaveChangesAsync();
+        }
+
+        if (!context.DeliveryMethods.Any())
+        {
+          var itemsData = File.ReadAllText(path + @"/Data/SeedData/Source/delivery.json");
+          var items = JsonSerializer.Deserialize<List<DeliveryMethod>>(itemsData);
+          foreach (var item in items)
+          {
+            context.DeliveryMethods.Add(item);
           }
           await context.SaveChangesAsync();
         }

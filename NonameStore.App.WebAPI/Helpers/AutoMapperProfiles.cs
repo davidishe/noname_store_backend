@@ -2,6 +2,7 @@ using AutoMapper;
 using NonameStore.App.WebAPI.Dtos;
 using NonameStore.App.WebAPI.Identity;
 using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.Identity;
 using NonameStore.App.WebAPI.Models.OrderAggregate;
 
