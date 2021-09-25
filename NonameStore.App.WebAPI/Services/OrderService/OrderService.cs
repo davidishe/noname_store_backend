@@ -1,10 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.Extensions.Logging;
+using NonameStore.App.Domains.Order.OrderCreator;
 using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
 using NonameStore.App.WebAPI.Data.Spec;
 using NonameStore.App.WebAPI.Data.UnitOfWork;
 using NonameStore.App.WebAPI.Models;
+using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.OrderAggregate;
 using NonameStore.App.WebAPI.Services.PaymentService;
 
@@ -15,17 +19,28 @@ namespace NonameStore.App.WebAPI.Services.OrderService
     private readonly IBasketRepository _basketRepo;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IPaymentService _paymentService;
-    public OrderService(IUnitOfWork unitOfWork, IBasketRepository basketRepo, IPaymentService paymentService)
+    private readonly IOrderCreator _orderCreator;
+    private readonly IMapper _mapper;
+    private readonly ILogger<OrderService> _logger;
+
+    public OrderService(IUnitOfWork unitOfWork, IBasketRepository basketRepo, IPaymentService paymentService, IOrderCreator orderCreator, IMapper mapper, ILogger<OrderService> logger)
     {
       _paymentService = paymentService;
       _unitOfWork = unitOfWork;
       _basketRepo = basketRepo;
+      _orderCreator = orderCreator;
+      _mapper = mapper;
+      _logger = logger;
     }
 
     public async Task<Order> CreateOrderAsync(string byerEmail, int deliveryMethodId, string basketId, Address shipingAddress, PaymentMethod paymentMethod)
     {
       // get basket from repo
       var basket = await _basketRepo.GetBasketAsync(basketId);
+
+
+      if (basket == null)
+        _logger.LogCritical("Ошибка при прочтении корзины");
 
       // get items from the product repo
       var items = new List<OrderItem>();
@@ -68,8 +83,13 @@ namespace NonameStore.App.WebAPI.Services.OrderService
       var result = await _unitOfWork.Complete();
       if (result <= 0) return null;
 
-      // delete basket
-      await _basketRepo.DeleteBasketAsync(basketId);
+      // send order to admin database
+      var orderToStore = _mapper.Map<Order, OrderDto>(order);
+      if (result > 0)
+      {
+        await _basketRepo.DeleteBasketAsync(basketId);
+        await _orderCreator.CreateOrderInDatabase(orderToStore);
+      }
 
       // return order
       return order;

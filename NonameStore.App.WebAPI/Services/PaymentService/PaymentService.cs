@@ -72,7 +72,7 @@ namespace NonameStore.App.WebAPI.Services.PaymentService
           Confirmation = new Confirmation
           {
             Type = ConfirmationType.Redirect,
-            ReturnUrl = _domainAddress + "orders"
+            ReturnUrl = _domainAddress + "/orders"
           }
         };
 

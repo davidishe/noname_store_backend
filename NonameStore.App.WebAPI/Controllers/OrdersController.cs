@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using NonameStore.App.WebAPI.Dtos;
 using NonameStore.App.WebAPI.Errors;
 using NonameStore.App.WebAPI.Extensions;
@@ -19,10 +21,12 @@ namespace NonameStore.App.WebAPI.Controllers
 
     private readonly IOrderService _orderService;
     private readonly IMapper _mapper;
-    public OrdersController(IOrderService orderService, IMapper mapper)
+    private readonly ILogger<OrdersController> _logger;
+    public OrdersController(IOrderService orderService, IMapper mapper, ILogger<OrdersController> logger)
     {
       _mapper = mapper;
       _orderService = orderService;
+      _logger = logger;
     }
 
     [HttpPost]
@@ -32,7 +36,12 @@ namespace NonameStore.App.WebAPI.Controllers
       var address = _mapper.Map<AddressDto, Address>(orderDto.ShipToAddress);
       var order = await _orderService.CreateOrderAsync(email, orderDto.DeliveryMethodId, orderDto.BasketId, address, orderDto.PaymentMethod);
 
-      if (order == null) return BadRequest(new ApiResponse(400, "Проблема при создании заказа"));
+      if (order == null)
+      {
+        _logger.LogCritical("Ошибка при создании заказа");
+        return BadRequest(new ApiResponse(400, "Проблема при создании заказа"));
+      }
+
       var orderToReturnDto = _mapper.Map<Order, OrderToReturnDto>(order);
       return Ok(orderToReturnDto);
 
