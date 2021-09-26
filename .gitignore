@@ -8,3 +8,4 @@ node_modules
 appsettings.json
 wwwroot
 publish
+.DS_Store

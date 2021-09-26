@@ -36,6 +36,8 @@ namespace NonameStore.App.WebAPI.Helpers
         .ForMember(d => d.PictureUrl, m => m.MapFrom(s => s.ItemOrdered.PictureUrl))
         .ForMember(d => d.PictureUrl, m => m.MapFrom<OrderItemUrlResolver>());
 
+
+
     }
   }
 }

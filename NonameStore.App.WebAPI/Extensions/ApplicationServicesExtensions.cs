@@ -1,7 +1,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using NonameStore.App.Domains.Order.OrderCreator;
+using NonameStore.App.Domains.OrderCreator;
 using NonameStore.App.WebAPI.Data.Repos;
 using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
 using NonameStore.App.WebAPI.Data.Repos.GenericRepository;

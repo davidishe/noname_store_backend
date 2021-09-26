@@ -3,12 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
-using NonameStore.App.Domains.Order.OrderCreator;
+using NonameStore.App.Domains.OrderCreator;
 using NonameStore.App.WebAPI.Data.Repos.BasketRepository;
 using NonameStore.App.WebAPI.Data.Spec;
 using NonameStore.App.WebAPI.Data.UnitOfWork;
 using NonameStore.App.WebAPI.Models;
-using NonameStore.App.WebAPI.Models.Dtos;
 using NonameStore.App.WebAPI.Models.OrderAggregate;
 using NonameStore.App.WebAPI.Services.PaymentService;
 
@@ -81,15 +80,11 @@ namespace NonameStore.App.WebAPI.Services.OrderService
 
       // TO DO: save to db
       var result = await _unitOfWork.Complete();
-      if (result <= 0) return null;
+      if (result < 0) return null;
 
       // send order to admin database
-      var orderToStore = _mapper.Map<Order, OrderDto>(order);
-      if (result > 0)
-      {
-        await _basketRepo.DeleteBasketAsync(basketId);
-        await _orderCreator.CreateOrderInDatabase(orderToStore);
-      }
+      await _basketRepo.DeleteBasketAsync(basketId);
+      await _orderCreator.CreateOrderInDatabase(order);
 
       // return order
       return order;

@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using NonameStore.App.WebAPI.Models.Dtos;
+using NonameStore.App.WebAPI.Models.OrderAggregate;
 
-namespace NonameStore.App.Domains.Order.OrderCreator
+namespace NonameStore.App.Domains.OrderCreator
 {
   public interface IOrderCreator
   {
-    Task<bool> CreateOrderInDatabase(OrderDto orderDto);
+    Task<bool> CreateOrderInDatabase(Order order);
   }
 }
