@@ -55,7 +55,7 @@ namespace NonameStore.App.WebAPI.Services.OrderService
       var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
 
       // calc subtotal
-      var subtotal = items.Sum(item => (item.Price * item.Quantity));
+      var subtotal = items.Sum(item => item.Price * item.Quantity);
 
       // check paymentIntentId already exists
       var spec = new OrderByPaymentIntentIdSpecification(basket.PaymentIntentId);
@@ -76,15 +76,18 @@ namespace NonameStore.App.WebAPI.Services.OrderService
 
       // create order
       var order = new Order(byerEmail, shipingAddress, deliveryMethod, items, subtotal, basket.PaymentIntentId, basket.OrderNumber, paymentMethod);
-      _unitOfWork.Repository<Order>().Add(order);
 
-      // TO DO: save to db
-      var result = await _unitOfWork.Complete();
-      if (result < 0) return null;
+
+      // _unitOfWork.Repository<Order>().Add(order);
+
+      // // TO DO: save to db
+      // var result = await _unitOfWork.Complete();
+      // if (result < 0) return null;
 
       // send order to admin database
       await _basketRepo.DeleteBasketAsync(basketId);
       await _orderCreator.CreateOrderInDatabase(order);
+
 
       // return order
       return order;

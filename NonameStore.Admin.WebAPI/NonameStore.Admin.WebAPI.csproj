@@ -6,6 +6,8 @@
 
     <ItemGroup>
     <ProjectReference Include="..\NonameStore.Admin.WebAPI.Models\NonameStore.Admin.WebAPI.Models.csproj"/>
+    <ProjectReference Include="..\NonameStore.Admin.Database\NonameStore.Admin.Database.csproj"/>
+
   </ItemGroup>
 
 

@@ -14,7 +14,6 @@ namespace NonameStore.App.WebAPI.Infrastructure.Database
 
     public DbSet<ProductRegion> Regions { get; set; }
     public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
-    
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductType> ProductTypes { get; set; }
     public DbSet<Order> Orders { get; set; }

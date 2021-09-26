@@ -13,6 +13,8 @@
     <PackageReference Include="Dadata" Version="20.10.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14"/>
+
     <PackageReference Include="runtime.osx.10.10-x64.CoreCompat.System.Drawing" Version="5.8.64"/>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.2"/>
@@ -29,7 +31,6 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7"/>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.8"/>
     <PackageReference Include="Google.Apis.Auth" Version="1.49.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14"/>
     <PackageReference Include="StackExchange.Redis" Version="2.2.62"/>
   </ItemGroup>
   <ItemGroup>
@@ -39,8 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\SeedData\Source\**" CopyToOutputDirectory="PreserveNewest"/>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Assets\Images\Products\**" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
 </Project>

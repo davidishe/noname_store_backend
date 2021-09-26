@@ -1,5 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace NonameStore.Admin.WebAPI.Models.Models
 {
+
+  [Owned]
   public class ProductItemOrdered
   {
     public ProductItemOrdered()
