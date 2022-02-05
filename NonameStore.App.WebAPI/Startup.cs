@@ -83,7 +83,7 @@ namespace NonameStore.App.WebAPI
       app.UseAuthentication();
       app.UseAuthorization();
       app.UseDefaultFiles();
-      app.UseStaticFiles();
+      // app.UseStaticFiles();
       app.UseStaticFiles(new StaticFileOptions
       {
         FileProvider = new PhysicalFileProvider(
@@ -94,7 +94,7 @@ namespace NonameStore.App.WebAPI
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapControllers();
-        endpoints.MapFallbackToController("Index", "Fallback");
+        // endpoints.MapFallbackToController("Index", "Fallback");
       });
     }
   }

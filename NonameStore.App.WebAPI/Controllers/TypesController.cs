@@ -22,7 +22,7 @@ namespace NonameStore.App.WebAPI.Controllers
 
     [AllowAnonymous]
     [HttpGet]
-    [Route("types")]
+    [Route("all")]
     public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypesByIdAsync()
     {
       var product = await _productTypeRepo.ListAllAsync();

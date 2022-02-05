@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonameStore.Admin.WebAPI", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonameStore.Admin.Database", "NonameStore.Admin.Database\NonameStore.Admin.Database.csproj", "{E8E5BCB9-7BCD-4B39-B195-E5B006A8B3CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonameStore.Console.Harvester", "NonameStore.Console.Harvester\NonameStore.Console.Harvester.csproj", "{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{E8E5BCB9-7BCD-4B39-B195-E5B006A8B3CD}.Release|x64.Build.0 = Release|Any CPU
 		{E8E5BCB9-7BCD-4B39-B195-E5B006A8B3CD}.Release|x86.ActiveCfg = Release|Any CPU
 		{E8E5BCB9-7BCD-4B39-B195-E5B006A8B3CD}.Release|x86.Build.0 = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|x64.Build.0 = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Debug|x86.Build.0 = Debug|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|x64.ActiveCfg = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|x64.Build.0 = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|x86.ActiveCfg = Release|Any CPU
+		{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

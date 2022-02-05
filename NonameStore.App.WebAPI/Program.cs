@@ -54,8 +54,8 @@ namespace NonameStore.App.WebAPI
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder =>
             {
-              webBuilder.UseStartup<Startup>().
-                UseUrls("https://localhost:6016");
+              webBuilder.UseStartup<Startup>()
+              .UseUrls("http://localhost:6016");
             });
   }
 }

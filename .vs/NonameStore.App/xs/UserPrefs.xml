@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{4AE9CCC0-D417-4681-93C5-BA3E352A0B60}|Default">
+  <MonoDevelop.Ide.ItemProperties.NonameStore.App.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NonameStore.Console.Harvester/Program.cs">
+    <Files>
+      <File FileName="NonameStore.Console.Harvester/Program.cs" Line="31" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NonameStore.App" expanded="True">
+            <Node name="NonameStore.Console.Harvester" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/akobiyada/Documents/SpecialProjects/16_NONAME_STORE/NonameStore/NonameStore.Backend/NonameStore.Console.Harvester/Program.cs" relfile="NonameStore.Console.Harvester/Program.cs" line="34" column="1" />
+      <Breakpoint file="/Users/akobiyada/Documents/SpecialProjects/16_NONAME_STORE/NonameStore/NonameStore.Backend/NonameStore.Console.Harvester/Program.cs" relfile="NonameStore.Console.Harvester/Program.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NonameStore.Console.Harvester PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
