@@ -10,8 +10,7 @@ namespace NonameStore.Console.Harvester
 
       var requestUrl = "http://localhost:6016/api/types/all";
       var client = new HttpClientModule();
-      var result = client.MakeHttpCall(requestUrl).Result;
-
+      var result = client.MakeHttpCallWithStream(requestUrl).Result;
       System.Console.BackgroundColor = ConsoleColor.White;
       System.Console.ForegroundColor = ConsoleColor.Black;
       System.Console.WriteLine(result);
